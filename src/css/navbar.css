@@ -1,0 +1,42 @@
+/* .navBar {
+  background: white;
+  border-bottom: 2px solid grey;
+}; */
+
+.icon {
+  padding: 10px 40px 10px 20px;
+  display: block;
+  font-size: 25px;
+  font-weight: 1000;
+  color: #750086
+}
+
+.icon:hover {
+  cursor: pointer;
+  background: #d2cced;
+}
+
+.icon-logo {
+  padding-right: 10px; 
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.item {
+  padding: 12px 20px;
+  display: inline-block;
+  color: black;
+}
+
+.item:hover {
+  cursor: pointer;
+  color: #750086;
+  background: #d2cced;
+  font-size: 120%;
+}

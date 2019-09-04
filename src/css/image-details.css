@@ -1,0 +1,11 @@
+.icon-heart {
+    color: red;
+}
+
+.icon-heart:hover {
+    transform: scale(1.5);
+}
+
+.title {
+    font-size: 20px;
+}
