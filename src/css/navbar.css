@@ -1,7 +1,3 @@
-/* .navBar {
-  position: fixed;
-}; */
-
 .icon {
   padding: 10px 40px 10px 20px;
   display: block;
@@ -12,7 +8,6 @@
 
 .icon:hover {
   cursor: pointer;
-  background: #d2cced;
 }
 
 .icon-logo {

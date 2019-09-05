@@ -3,7 +3,6 @@ import NavBar from './navbar';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import ImageDetails from './image-details';
 import ImageBrowser from './image-browser';
-import SearchForm from './search';
 import axios from 'axios';
 import '../css/app.css';
 
@@ -15,7 +14,6 @@ class App extends React.Component {
     super(props);
     this.state = {
       images: [],
-      //userImages: [],
       searchQuery: [],
       error: false,
     };
@@ -36,33 +34,12 @@ class App extends React.Component {
       });
   };
 
-  handleSearchForm = (searchString) => {
-    axios.get(`${URL}?tags=${searchString}`)
-      .then(response => {
-        console.log(response);
-        this.setState({
-          images: response.data,
-        }, () => this.props.history.push('/'));
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
   render() {
     console.log(this.state)
     return (
       <React.Fragment>
         <NavBar/>
-        <SearchForm
-          handleSearchForm={this.handleSearchForm}
-        />
         <Switch>
-          {/* <Route
-            exact
-            path="/gallery"
-            render={props => <ImageBrowser {...props} images={this.state.images} />}
-          /> */}
           <Route
             exact
             path="/"
@@ -72,11 +49,6 @@ class App extends React.Component {
             exact
             path="/image/:id"
             render={(props) => <ImageDetails {...props} />}
-          />
-          <Route
-            exact
-            path="/images/"
-            render={(props) => <ImageBrowser {...props} searchQuery={this.state.searchQuery} />}
           />
         </Switch>
         <footer className="footer">

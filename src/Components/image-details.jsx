@@ -4,7 +4,7 @@ import axios from 'axios';
 // import { faComment } from '@fortawesome/free-solid-svg-icons';
 // import { library } from '@fortawesome/fontawesome-svg-core';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../css/image-details.scss';
+import '../css/image-details.css';
 
 
 const URL = 'http://axielldevtest.eastus2.cloudapp.azure.com:3000/api/media';
@@ -43,11 +43,11 @@ class ImageDetails extends React.Component {
     return (
       <div className="image-container">
         <Image url={url} className="image" />
-        <div className="image-text"> 
-          <span className="title">{title}</span>
-          <span> 
+        <div className="text-wrapper"> 
+          <div className="title">{title}</div>
+          <div className="desc">  
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-          </span>
+          </div>
         </div>
       </div>
     );

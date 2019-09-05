@@ -1,0 +1,33 @@
+.image-container {
+	height: 10%;
+	display: flex;
+	flex-direction: row;
+	padding: 50px 20px 50px 20px;
+	margin: 5px;
+	background: rgb(243, 239, 239);
+	border-radius: 10px;
+	width: 85%;
+}
+
+.image {
+	margin-right: 60px;
+}
+
+.text-wrapper {
+	padding: 10px 20px 50px 20px;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+}
+
+
+.title {
+	font-size: 30px;
+	padding-bottom: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.desc {
+	width: 70%
+}
