@@ -5,6 +5,7 @@
   align-items: center;
   background: black;
   justify-content: space-around;
+  padding-top: 50px;
 }
 
 .thumbnail-image {

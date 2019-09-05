@@ -5,10 +5,10 @@ const imgStyle = {
   width: '500px',
 };
 
-const Image = ({url}) => {
+const Image = ({ url }) => {
   return (
     <div className="image">
-      <img url={url} style={imgStyle} alt={''} />
+      <img src={url} style={imgStyle} alt={''} />
     </div>
   );
 };

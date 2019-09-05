@@ -5,6 +5,8 @@ import ImageDetails from './image-details';
 import ImageBrowser from './image-browser';
 import SearchForm from './search';
 import axios from 'axios';
+import '../css/app.css';
+
 
 const URL = 'http://axielldevtest.eastus2.cloudapp.azure.com:3000/api/media';
 
@@ -77,9 +79,9 @@ class App extends React.Component {
             render={(props) => <ImageBrowser {...props} searchQuery={this.state.searchQuery} />}
           />
         </Switch>
-        <footer>
-          <span>
-            HELLO
+        <footer className="footer">
+          <span className="footer-text">
+            Axiell Art Gallery 2019.
           </span>
         </footer>
       </React.Fragment>
