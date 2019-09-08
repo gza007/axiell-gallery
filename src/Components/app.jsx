@@ -7,7 +7,7 @@ import axios from 'axios';
 import '../css/app.css';
 
 
-const URL = 'http://axielldevtest.eastus2.cloudapp.azure.com:3000/api/media';
+const URL = 'https://axielldevtest.eastus2.cloudapp.azure.com:3000/api/media';
 
 class App extends React.Component {
   constructor(props) {

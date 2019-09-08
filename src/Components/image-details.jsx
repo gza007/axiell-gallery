@@ -4,7 +4,7 @@ import axios from 'axios';
 import '../css/image-details.css';
 
 
-const URL = 'http://axielldevtest.eastus2.cloudapp.azure.com:3000/api/media';
+const URL = 'https://axielldevtest.eastus2.cloudapp.azure.com:3000/api/media';
 
 class ImageDetails extends React.Component {
   constructor(props) {
